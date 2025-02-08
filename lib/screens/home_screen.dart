@@ -16,7 +16,7 @@ class HomeScreen extends StatelessWidget {
             floating: false,
             pinned: true,
             flexibleSpace: FlexibleSpaceBar(
-              title: const Text('Book Store',
+              title: const Text('Book Nest',
               style: TextStyle(
                 color:Colors.white 
               ),

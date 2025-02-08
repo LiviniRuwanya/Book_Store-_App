@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'Modern Book Store',
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        scaffoldBackgroundColor: const Color.fromARGB(255, 204, 180, 180),
+        scaffoldBackgroundColor: const Color.fromARGB(154, 114, 48, 48),
         cardTheme: CardTheme(
           elevation: 8,
           shape: RoundedRectangleBorder(

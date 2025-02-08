@@ -51,7 +51,6 @@ class _AnimatedBookCardState extends State<AnimatedBookCard>
         ),
         child: GestureDetector(
           onTap: () {
-            // Show book details
             showModalBottomSheet(
               context: context,
               isScrollControlled: true,
@@ -69,11 +68,11 @@ class _AnimatedBookCardState extends State<AnimatedBookCard>
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Book Cover Image
+                  // Book Cover Image using local asset
                   ClipRRect(
                     borderRadius: BorderRadius.circular(12),
-                    child: Image.network(
-                      widget.book.imageUrl,
+                    child: Image.asset(
+                      widget.book.coverImagePath,
                       height: 180,
                       width: double.infinity,
                       fit: BoxFit.cover,
@@ -81,13 +80,15 @@ class _AnimatedBookCardState extends State<AnimatedBookCard>
                   ),
                   const SizedBox(height: 12),
 
-                  // Title, Author, Price, and Favorite Button
+                  // Title, Author, Price
                   Text(
                     widget.book.title,
                     style: const TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
                     ),
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
                   ),
                   const SizedBox(height: 4),
                   Text(
@@ -107,7 +108,7 @@ class _AnimatedBookCardState extends State<AnimatedBookCard>
                     ),
                   ),
 
-                  // Row with Cart Button and Rating
+                  // Cart Button and Rating
                   const SizedBox(height: 8),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -172,13 +173,11 @@ class _AnimatedBookCardState extends State<AnimatedBookCard>
         child: ListView(
           controller: controller,
           children: [
-            Hero(
-              tag: 'book-${widget.book.title}',
-              child: Image.network(
-                widget.book.imageUrl,
-                height: 300,
-                fit: BoxFit.cover,
-              ),
+            // Book cover image using local asset
+            Image.asset(
+              widget.book.coverImagePath,
+              height: 300,
+              fit: BoxFit.cover,
             ),
             const SizedBox(height: 24),
             Text(
