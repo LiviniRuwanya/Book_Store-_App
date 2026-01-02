@@ -1,16 +1,46 @@
-# bookstore_app
+# Book Store App
 
-A new Flutter project.
+A simple Flutter app for browsing books. It shows a list of books, animated
+book cards, and a detail screen for each book. This README explains what the
+project is, how to run it, and where the important files are.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Browse a list of books on the home screen
+- Animated book card UI components
+- Book detail view with basic information
 
-A few resources to get you started if this is your first Flutter project:
+## Requirements
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Flutter SDK (stable channel)
+- A device or emulator (Android, iOS, Windows, macOS, or Linux)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Run locally
+
+1. Open a terminal in the project root (`Book_Store-_App`).
+2. Get dependencies:
+
+```bash
+flutter pub get
+```
+
+3. Run the app on a connected device or emulator:
+
+```bash
+flutter run
+```
+
+## Project structure (important files)
+
+- `lib/main.dart` — app entry point
+- `lib/models/book.dart` — Book model
+- `lib/screens/home_screen.dart` — Home screen with book list
+- `lib/widgets/animated_book_card.dart` — Animated book card widget
+- `assets/`, `images/` — static assets used by the app
+
+
+
+## Notes
+
+- This project is written in simple Flutter and is a good starting point for
+	learning how to build small cross-platform apps with animated widgets.
