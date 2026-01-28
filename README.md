@@ -44,3 +44,8 @@ flutter run
 
 - This project is written in simple Flutter and is a good starting point for
 	learning how to build small cross-platform apps with animated widgets.
+
+## UI / UX Design (Figma)
+
+Figma Design Link:  
+https://www.figma.com/design/se6Up5M0oT2nTMgqtsfmqy/Untitled?t=0Dm6ykJUg5uoYp3F-1
